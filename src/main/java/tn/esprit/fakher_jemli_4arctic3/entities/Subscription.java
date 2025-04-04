@@ -21,7 +21,7 @@ public class Subscription implements Serializable {
     private LocalDate startDate;
     private LocalDate endDate;
     private Float price;
-    private TypeSubscription typeSub;
+    private TypeSubscription typeSubscription;
     //parent
     @OneToOne
     Skier skier;

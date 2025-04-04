@@ -10,7 +10,7 @@ import java.util.List;
 
 public class PisteServicesImpl implements IPisteServices {
     @Autowired
-    private IPisteRepository pisteRepository;
+    IPisteRepository pisteRepository;
     @Override
     public Piste addPiste(Piste piste) {
         return pisteRepository.save(piste);

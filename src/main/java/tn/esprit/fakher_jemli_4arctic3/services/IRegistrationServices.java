@@ -10,4 +10,7 @@ public interface IRegistrationServices {
     Registration retrieveRegistration (long numRegistration);
     void deleteRegistration (long numRegistration);
     List<Registration> retrieveAllRegistration();
+    Registration addRegistrationAndAssignToSkier(Registration registration, Long numSkieur);
+    Registration assignRegistrationToCourse(Long numRegistration, Long numCourse);
+    Registration addRegistrationAndAssignToSkierAndCourse(Registration registration, Long numSkier, Long numCourse);
 }
